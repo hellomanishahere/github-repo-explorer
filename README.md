@@ -57,15 +57,6 @@ The purpose of this project is to demonstrate:
 
 ---
 
-## 📅 Milestone Plan
-
-* Milestone 1: Project planning and setup
-* Milestone 2: API integration
-* Milestone 3: Feature implementation (search, filter, sort)
-* Milestone 4: Deployment and final submission
-
----
-
 ## 👩‍💻 Author
 
 * Manisha
