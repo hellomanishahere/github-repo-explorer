@@ -55,8 +55,3 @@ The purpose of this project is to demonstrate:
 2. Open the project folder
 3. Open `index.html` in your browser
 
----
-
-## 👩‍💻 Author
-
-* Manisha
