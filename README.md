@@ -10,6 +10,10 @@ This web application enables users to search for GitHub repositories based on ke
 
 ---
 
+## 🔗 Live Demo
+https://hellomanishahere.github.io/github-repo-explorer/
+
+---
 ## 🎯 Purpose
 
 The purpose of this project is to demonstrate:
