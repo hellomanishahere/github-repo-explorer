@@ -9,20 +9,12 @@ body {
   background: linear-gradient(to right, #667eea, #764ba2);
   min-height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding-top: 60px;
+  margin: 0;
+  padding: 20px;
 }
 
 .container {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
   width: 100%;
-  max-width: 850px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 h1 {
@@ -61,8 +53,8 @@ button:hover {
 
 #results {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .repo {
@@ -99,11 +91,16 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (min-width: 600px) {
   #results {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 }
 
