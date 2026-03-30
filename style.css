@@ -12,50 +12,47 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+
+  padding-top: 60px;
 }
 
 .container {
   background: white;
-  padding: 30px;
-  border-radius: 15px;
+  padding: 25px;
+  border-radius: 12px;
   width: 100%;
-  max-width: 900px;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  max-width: 850px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 h1 {
+  text-align: center;
   margin-bottom: 25px;
   color: #333;
 }
 
 .search-box {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
 input {
   padding: 12px;
   width: 60%;
-  max-width: 300px;
+  max-width: 320px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
   outline: none;
-}
-
-input:focus {
-  border-color: #667eea;
 }
 
 button {
   padding: 12px 18px;
-  margin-left: 10px;
   border: none;
   background: #667eea;
   color: white;
-  border-radius: 8px;
+  border-radius: 0 8px 8px 0;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 button:hover {
@@ -63,29 +60,26 @@ button:hover {
 }
 
 #results {
-  margin-top: 25px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 15px;
 }
 
 .repo {
-  background: #f9f9f9;
+  background: #fafafa;
   padding: 15px;
   border-radius: 10px;
-  text-align: left;
-  transition: 0.3s;
-  border: 1px solid #eee;
+  border-left: 4px solid #667eea;
+  transition: 0.2s;
 }
 
 .repo:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: #f0f2ff;
 }
 
 .repo h3 {
-  margin-bottom: 10px;
-  color: #333;
+  margin-bottom: 8px;
+  color: #222;
 }
 
 .repo p {
@@ -95,10 +89,22 @@ button:hover {
 
 .repo a {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 8px;
   color: #667eea;
+  font-size: 14px;
   text-decoration: none;
-  font-weight: bold;
+}
+
+.repo a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  #results {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 }
 
 .repo a:hover {
