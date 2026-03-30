@@ -27,7 +27,7 @@ searchBtn.addEventListener("click", () => {
 
         div.innerHTML = `
           <h3>${repo.name}</h3>
-          <p>${repo.description || "No description available"}</p>
+          <p>${repo.description ? repo.description.substring(0, 100) + "..." : "No description available"}</p>
           <p>⭐ Stars: ${repo.stargazers_count}</p>
           <a href="${repo.html_url}" target="_blank">View Repository</a>
         `;
