@@ -12,16 +12,31 @@
   <h1>GitHub Repository Explorer</h1>
 
   <div class="search-box">
-    <input 
-      type="text" 
-      id="searchInput" 
-      placeholder="Search repositories..." 
-      autocomplete="off"
-    />
+    <input type="text" id="searchInput" placeholder="Search repositories..." autocomplete="off" />
     <button id="searchBtn">Search</button>
+
+    <select id="languageFilter">
+      <option value="">All Languages</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+    </select>
+
+    <select id="sortSelect">
+      <option value="stars">Sort by Stars</option>
+      <option value="forks">Sort by Forks</option>
+      <option value="updated">Sort by Updated</option>
+    </select>
+
+    <button id="darkModeBtn">🌙</button>
   </div>
 
   <div id="results"></div>
+
+  <div class="pagination">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
 
   <script defer src="script.js"></script>
 
